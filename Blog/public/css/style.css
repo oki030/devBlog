@@ -1,0 +1,198 @@
+/* CSS Document */
+body{
+	background:url(../images/bg.gif) repeat-x 0 0 #F7F7F7; color:#171717;
+	font:normal 13px/20px Georgia, "Times New Roman", Times, serif;
+	margin:0; padding:0;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+div, h1, h2, h3, h4, h5, h6, form, label, input, span, ul, li, p, a{
+	margin:0; padding:0;}
+ul{
+	list-style:none;}
+.spacer{
+	font-size:0; line-height:0; clear:both;}
+
+
+/* -- top navigation start -- */
+#topNav{
+	width:440px; margin:0 auto; height:37px;}
+#topNav ul{
+	width:auto; margin:0 auto;}
+#topNav ul li{
+	height:37px; float:left;
+	background:url(../images/bg.gif) repeat-x 0 0 #292929; color:#C1C1C1;
+	font:bold 12px/37px Arial, Helvetica, sans-serif;}
+#topNav ul li a{
+	padding:0 18px; height:37px; float:left; text-decoration:none; display:block;
+	background:url(../images/bg.gif) repeat-x 0 0 #292929; color:#C1C1C1;
+	font:bold 12px/37px Arial, Helvetica, sans-serif;}
+#topNav ul li a:hover{
+	background:url(../images/top_btn_h.gif) no-repeat center bottom;}
+#topNav ul li a.hover{
+	padding:0 18px; height:37px; float:left; text-decoration:none; display:block;
+	background:url(../images/top_btn_h.gif) no-repeat center bottom; color:#00AAFF;
+	font:bold 12px/37px Arial, Helvetica, sans-serif;}
+/* -- top navigation start -- */
+
+/* -- body start -- */
+#body{
+	width:800px; padding: 0 0 0 0;	 
+    color:#171717;  
+    
+    min-height: 95%;
+	height: auto !important;
+	height: 95%;
+	margin: 0 auto -55px;  
+ }
+ 
+ .logodiv{
+    background:url(../images/header_bg.gif) no-repeat right top #F7F7F7;
+    height: 210px;
+ }
+
+.post{
+    width: 500px; height: auto;
+    margin: 10px; padding: 10px 10px 5px 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#292929; color:#FFFFFF;
+    font-size: 16px;
+}
+
+.post a:link {color:#292929; font-size: 16px;}      /* unvisited link */
+.post a:visited {color:#292929; font-size: 16px;}  /* visited link */
+.post a:hover {color:#00AAFF; font-size: 16px;}  /* mouse over link */
+.post a:active {color:#292929; font-size: 16px;}  /* selected link */
+
+.post_blog{
+    width: 500px; height: auto;
+    margin: 10px; padding: 5px 10px 5px 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#292929; color:#FFFFFF;
+    font-size: 16px;
+}
+
+.post_blog a:link {color:#FFFFFF; font-size: 16px;}      /* unvisited link */
+.post_blog a:visited {color:#FFFFFF; font-size: 16px;}  /* visited link */
+.post_blog a:hover {color:#00AAFF; font-size: 16px;}  /* mouse over link */
+.post_blog a:active {color:#FFFFFF; font-size: 16px;}  /* selected link */
+
+.post_content{
+    width: 480px; height: auto;
+    padding: 10px;
+    margin:3px auto;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#FFFFFF; color:#292929;
+}
+
+.post_content a:link {color:#292929; font-size: 16px;}      /* unvisited link */
+.post_content a:visited {color:#292929; font-size: 16px;}  /* visited link */
+.post_content a:hover {color:#00AAFF; font-size: 16px;}  /* mouse over link */
+.post_content a:active {color:#292929; font-size: 16px;}  /* selected link */
+
+.post_list{
+    width: 220px; height: auto;
+    margin: 10px; padding: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#292929; color:#FFFFFF;
+}
+
+.post_list a:link {color:#FFFFFF; font-size: 16px;}      /* unvisited link */
+.post_list a:visited {color:#FFFFFF; font-size: 16px;}  /* visited link */
+.post_list a:hover {color:#00AAFF; font-size: 16px;}  /* mouse over link */
+.post_list a:active {color:#FFFFFF; font-size: 16px;}  /* selected link */
+
+.contact a:link {color:#292929; font-size: 16px;}      /* unvisited link */
+.contact a:visited {color:#292929; font-size: 16px;}  /* visited link */
+.contact a:hover {color:#00AAFF; font-size: 16px;}  /* mouse over link */
+.contact a:active {color:#292929; font-size: 16px;}  /* selected link */
+
+.hallo_div{
+    height: auto; width: 790px; 
+    padding: 5px; margin: 10px 0 10px 0; 
+    color:#292929; float: left;
+    font-size: 16px;
+}
+
+.hallo_div a:link {color:#292929; font-size: 16px;}      /* unvisited link */
+.hallo_div a:visited {color:#292929; font-size: 16px;}  /* visited link */
+.hallo_div a:hover {color:#00AAFF; font-size: 16px;}  /* mouse over link */
+.hallo_div a:active {color:#292929; font-size: 16px;}  /* selected link */
+
+.login_div{
+    text-align: center; 
+    margin: auto; width: 230px; height: auto;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#FFFFFF; color:#292929;
+    font-size: 16px;
+    border: solid 2px #292929;
+}
+
+.edit_div{
+    margin:0 auto; padding: 0 0 10px 40px;
+    float: left; width: 800px; height: auto;   
+    color:#292929;
+    font-size: 16px;   
+}
+
+.button
+{   
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	background-color: #292929;
+	border: 1px solid #292929;
+	color: #FFFFFF;	   	
+	padding: 2px 6px;    
+	height: 28px;
+}
+
+.button:active
+{
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+	border: 1px solid #292929;
+	color: #292929;  	
+	padding: 2px 6px;
+	height: 28px;    
+}
+
+.textbox{
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+	border: 1px solid #292929;
+	color: #292929;
+}
+
+/* footer start -- */
+#footer{
+	background-color:#292929; color:#FFFFFF; clear:both;
+    height:57px; width: 100%;      
+ }
+.footer{
+	width:370px; height:auto; margin:0 auto; padding:10px 0 0 0; clear:both;}
+.footer ul{
+	width:auto; margin:0 auto;}
+.footer ul li{
+	font:bold 12px/20px Arial, Helvetica, sans-serif;
+	color:#FAFAFA; background-color:#292929; float:left;}
+.footer ul li a{
+	font:bold 12px/20px Arial, Helvetica, sans-serif; text-decoration:none;
+	color:#FAFAFA; background-color:#292929; padding:0 8px;}
+.footer ul li a:hover{
+	font:bold 12px/20px Arial, Helvetica, sans-serif; text-decoration:none;
+	color:#FAFAFA; background-color:#484848; padding:0 8px;}
+    
+.footer p{
+	margin:0 auto; width:200px; color:#EDE3C0; background-color:#292929;
+	font:normal 11px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+/* footer end -- */
