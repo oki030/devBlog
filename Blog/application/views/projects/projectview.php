@@ -27,8 +27,12 @@
                 ?>
             </div>
             <div style="text-align: right;">
-                <a href="<?php if (isset($download_link[0])) echo $download_link[0]?>" target="_blank" title="Download">Download</a>
-                <a href="<?php if (isset($source_link[0])) echo $source_link[0]?>" target="_blank" title="View source">View source</a>
+                <?php if ($download_link[0] != ''): ?>
+                <a href="<?php echo $download_link[0] ?>" target="_blank" title="Download">Download</a>
+                <?php endif;?>
+                <?php if ($source_link[0] != ''): ?>
+                <a href="<?php echo $source_link[0] ?>" target="_blank" title="View source">View source</a>
+                <?php endif;?>
             </div>
         </div>                                         
 </div>

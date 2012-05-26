@@ -35,8 +35,12 @@
                 ?>
             </div>            
             <div style="text-align: right;">                
-                <a href="<?php echo $download_link[$key]?>" target="_blank" title="Download">Download</a>
-                <a href="<?php echo $source_link[$key]?>" target="_blank" title="View source">View source</a>
+                <?php if ($download_link[$key] != ''): ?>
+                <a href="<?php echo $download_link[$key] ?>" target="_blank" title="Download">Download</a>
+                <?php endif;?>
+                <?php if ($source_link[$key] != ''): ?>
+                <a href="<?php echo $source_link[$key] ?>" target="_blank" title="View source">View source</a>
+                <?php endif;?>
             </div>
         </div>
         <?php endforeach;?>               
