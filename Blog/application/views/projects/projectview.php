@@ -6,7 +6,7 @@
     </div>   
                                       
         <div class="post_blog" style="width: 770px; float: left;">
-            <img src="<?php echoURL('images/post.png')?>" alt="App" border="0" width="16" height="16" style="border:none;" />
+            <img src="<?php echoURL('images/project.png')?>" alt="App" border="0" width="16" height="16" style="border:none;" />
             <?php 
                 if (isset($name[0])) echo $name[0];
             ?>                
