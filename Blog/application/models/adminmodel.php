@@ -64,7 +64,7 @@ class AdminModel extends NN_Model
     
     function addPost($title, $content, $category)
     {
-        $val = "'".mysql_real_escape_string($title)."','".mysql_real_escape_string($content)."','".mysql_real_escape_string($category);
+        $val = "'".mysql_real_escape_string($title)."','".$content."','".mysql_real_escape_string($category);
         $query = sprintf("INSERT INTO `posts`(`p_title`, `p_content`, `p_category`, `p_added_date`) VALUES (".$val."','".date('y-m-d')."');");
         $ret = $this->db->query($query);
         
@@ -81,7 +81,7 @@ class AdminModel extends NN_Model
     
     function updatePost($id, $title, $content, $category)
     {
-        $query = sprintf("UPDATE posts SET p_title='".mysql_real_escape_string($title)."', p_content='".mysql_real_escape_string($content)."', p_category='".mysql_real_escape_string($category)."' WHERE p_id='".$id."'");
+        $query = sprintf("UPDATE posts SET p_title='".mysql_real_escape_string($title)."', p_content='".$content."', p_category='".mysql_real_escape_string($category)."' WHERE p_id='".$id."'");
         $ret = $this->db->Query($query);
                 
         return $ret;
@@ -90,7 +90,7 @@ class AdminModel extends NN_Model
     // Projects
     function addProject($name, $content, $category, $imgname, $download, $source)
     {
-        $val = "'".mysql_real_escape_string($name)."','".mysql_real_escape_string($content)."','".mysql_real_escape_string($category)."','".mysql_real_escape_string($imgname)."','".mysql_real_escape_string($source)."','".mysql_real_escape_string($download);
+        $val = "'".mysql_real_escape_string($name)."','".$content."','".mysql_real_escape_string($category)."','".mysql_real_escape_string($imgname)."','".mysql_real_escape_string($source)."','".mysql_real_escape_string($download);
         $query = sprintf("INSERT INTO `projects`(`name`, `description`, `category`, `img_name`, `source_link`, `download_link`, `added_date`) VALUES (".$val."','".date('y-m-d')."');");
         $ret = $this->db->query($query);
         
@@ -107,7 +107,7 @@ class AdminModel extends NN_Model
     
     function updateProject($id, $name, $content, $category, $imgname, $download, $source)
     {        
-        $query = sprintf("UPDATE projects SET name='".mysql_real_escape_string($name)."', description='".mysql_real_escape_string($content)."', category='".mysql_real_escape_string($category)."', img_name='".mysql_real_escape_string($imgname)."', source_link='".mysql_real_escape_string($source)."', download_link='".mysql_real_escape_string($download)."', added_date='".date('y-m-d')."' WHERE id='".mysql_real_escape_string($id)."'");
+        $query = sprintf("UPDATE projects SET name='".mysql_real_escape_string($name)."', description='".$content."', category='".mysql_real_escape_string($category)."', img_name='".mysql_real_escape_string($imgname)."', source_link='".mysql_real_escape_string($source)."', download_link='".mysql_real_escape_string($download)."', added_date='".date('y-m-d')."' WHERE id='".mysql_real_escape_string($id)."'");
         $ret = $this->db->query($query);
         
         return $ret;
