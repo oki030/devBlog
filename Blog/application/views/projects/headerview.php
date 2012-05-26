@@ -4,6 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Dev blog</title>
 <link href="<?php echoURL('css/style.css')?>" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="<?php echoURL('js/highslide/highslide.js') ?>"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echoURL('js/highslide/highslide.css') ?>" />
+	
+	<script type="text/javascript">
+		//<![CDATA[
+		hs.registerOverlay({
+			html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+			position: 'top right',
+			fade: 2 // fading the semi-transparent overlay looks bad in IE
+		});
+		
+		hs.graphicsDir = <?php echoURL('js/highslide/graphics/') ?>;
+		hs.wrapperClassName = 'borderless';
+		//]]>
+	</script>
+
 </head>
 
 <body>
