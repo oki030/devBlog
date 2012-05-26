@@ -10,23 +10,7 @@
     <script type="text/javascript" src="<?php echoURL('js/jquery-1.7.2.min.js')?>"></script>    
     <script type="text/javascript" src="<?php echoURL('js/jquery-ui-1.8.20.custom.min.js')?>"></script>
     
-    <script type="text/javascript" src="<?php echoURL('js/tiny_mce/tiny_mce.js')?>"></script>
-	
-	<script type="text/javascript" src="<?php echoURL('js/highslide/highslide.js') ?>"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echoURL('js/highslide/highslide.css') ?>" />
-	
-	<script type="text/javascript">
-		//<![CDATA[
-		hs.registerOverlay({
-			html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
-			position: 'top right',
-			fade: 2 // fading the semi-transparent overlay looks bad in IE
-		});
-		
-		hs.graphicsDir = <?php echoURL('js/highslide/graphics/') ?>;
-		hs.wrapperClassName = 'borderless';
-		//]]>
-	</script>
+    <script type="text/javascript" src="<?php echoURL('js/tiny_mce/tiny_mce.js')?>"></script>	
 
     <script type="text/javascript">
         tinyMCE.init({
